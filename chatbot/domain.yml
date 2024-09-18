@@ -1,0 +1,269 @@
+version: "3.1"
+
+intents:
+  - get_started
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - ask_eligibility_conditions
+  - ask_registration_process
+  - ask_technical_issues
+  - ask_helpline_info
+  - ask_required_documents
+  - ask_upload_issues
+  - ask_next_steps_after_submission
+  - ask_edit_application
+  - ask_fdv_center_charges
+  - ask_fdv_verification_necessity
+  - ask_facilitation_centre
+  - ask_document_after_verification
+  - ask_submit_original_documents
+  - ask_commerce_arts_eligibility
+  - ask_diploma_eligibility
+  - ask_scholarship_benefits
+  - ask_payment_process
+  - ask_academic_fee_payment
+  - ask_maintenance_allowance
+  - ask_no_aadhaar
+  - ask_aadhaar_not_seeded
+  - ask_maintenance_allowance_disbursed
+  - ask_other_scholarships
+  - ask_online_counseling
+  - ask_iit_nit_scholarship
+  - ask_mbbs_bds_scholarship
+  - ask_management_quota_scholarship
+  - ask_choice_of_college
+  - ask_college_allotment_not_choice
+  - ask_freeze_option_next_step
+  - ask_joining_process
+  - ask_own_category_joining_process
+  - ask_scholarship_without_aicte_counseling
+  - ask_upload_joining_report_steps
+  - ask_scholarship_assurance_own_category
+  - ask_eligibility_after_discontinuing_course
+  - ask_scholarship_for_another_ug_degree
+  - ask_eligibility_after_previous_admission_in_jk
+
+
+
+responses:
+
+  utter_welcome_message:
+    - text:  "Hi there! How can I help you with your scholarship questions today? Please select one of the options below:"
+      buttons:
+        - title: "Scholarship Information"
+          payload: "/scholarship_info"
+        - title: "Eligibility Criteria"
+          payload: "/eligibility_criteria"
+        - title: "Contact Support"
+          payload: "/contact_support"
+
+  utter_greet:
+    - text:  "Hi there! How can I help you with your scholarship questions today? "
+
+  utter_cheer_up:
+    - text: "I know things can get tough sometimes, but here's a little something to lift your spirits!"
+
+  utter_did_that_help:
+    - text: "Did that answer your question? Let me know if you need more help!"
+
+  utter_happy:
+    - text: "Awesome! Glad to hear that. Keep up the great work!"
+
+  utter_goodbye:
+    - text: "Take care! If you need anything else, I'll be here."
+
+  utter_iamabot:
+    - text: "Just a heads up—I'm a bot created by Himanshu, here to assist you with your queries."
+
+  utter_ask_eligibility_conditions:
+    - text: |
+        To be eligible for this scholarship, you need to meet a few requirements:
+        - You must be a resident of UT of J&K or Ladakh.
+        - Your family's annual income should be under Rs. 8.00 Lakh.
+        - You should have passed your 10+2 exam from a JKBOSE or CBSE-affiliated school in UT of J&K or Ladakh.
+        - If you’re entering directly into the second year of an engineering course, a 10+3 diploma from a UT of J&K or Ladakh Polytechnic is required.
+        - If you want to benefit from the reservation policy, make sure you have the relevant category certificate.
+
+  utter_ask_registration_process:
+    - text: |
+        To get started with the SSSJKL scholarship registration:
+        1. Head over to the AICTE website here: https://www.aicte-india.org/bureaus/jk
+        2. Look for the SSSJKL tab on the homepage.
+        3. Click on the tab for A/Y 2024-25 and follow the instructions to register.
+        4. Don’t forget—Aadhaar authentication is a must before you can submit your application and verify your documents at the nearest FDVC. For more details, check out the AICTE website: https://www.aicte-india.org/bureaus/jk
+
+  utter_ask_technical_issues:
+    - text: |
+        Running into tech issues while registering? No worries—just shoot an email to jkadmission2024@aicte-india.org, and they’ll help you out.
+
+  utter_ask_helpline_info:
+    - text: |
+        If you have any more questions, feel free to call the AICTE office at 011-29581051 (available from 9.30 am to 5.00 pm on working days) or send an email to jkadmission2024@aicte-india.org. If you're already registered, you can also log in to submit a grievance and get help.
+
+  utter_ask_required_documents:
+    - text: |
+        You'll need to have a few important documents ready when you're filling out the SSSJKL application after registering:
+        - A self-attested scanned copy of your Domicile Certificate, SSC Marksheet, Family Income Certificate (issued by Tehsildar or equivalent, and not older than 6 months), and any Caste Reservation/Physically disabled certificates (if applicable).
+        - A passport-sized photo (ideally 200 x 230 pixels).
+        - A passport-sized photo of your father/guardian (if you have a single mother, upload her photo in place of the father’s/guardian’s).
+        - A passport-sized photo of your mother/guardian.
+        - Your signature (ideally 140 x 60 pixels).
+
+  utter_ask_upload_issues:
+    - text: |
+        Make sure all your documents are in .JPG, .PDF, or .PNG format and that each file is under 2 MB in size. This will help avoid any upload issues.
+
+  utter_ask_next_steps_after_submission:
+    - text: |
+        Once you’ve submitted your online application, don’t forget to print out a copy. Then, head over to the nearest Facilitation-cum-Document Verification Centre (FDVC) with your original documents and a set of self-attested photocopies for verification. You can find the list of FDVCs on the AICTE website: https://www.aicte-india.org/bureaus/jk
+
+  utter_ask_edit_application:
+    - text: |
+        Yes, you can make changes to your application. Just visit the nearest FDVC, where a Nodal Officer will help you edit your online form. Be sure to bring the original documents that support your request for changes. It’s really important to double-check everything, especially your caste category and supporting certificates, while you're there. After the correction window closes, AICTE won't allow any further changes, so make sure everything is accurate.
+
+  utter_ask_fdv_center_charges:
+    - text: |
+        Good news—document verification at the FDVC is completely free. No charges at all!
+
+  utter_ask_fdv_verification_necessity:
+    - text: |
+        Yes, visiting the FDVC for document verification is absolutely necessary for all students registered on the AICTE SSSJKL Portal. This step determines whether you're eligible for the scholarship as per the scheme guidelines. If you skip this step, you won’t be able to participate in the Counseling Process 2024-25 conducted by AICTE, even if you’re taking admission under the "on my own" category.
+
+  utter_ask_facilitation_centre:
+    - text: |
+        The Government of the UTs of Jammu & Kashmir and Ladakh has set up Facilitation-cum-Document Verification Centers (FDVCs). You can find a list of these centers on the AICTE website. Just pick the one that’s most convenient for you. After your documents are successfully verified, you’ll be able to access the choice filling option—make sure to check the calendar of events on the AICTE website for more details.
+
+  utter_ask_document_after_verification:
+    - text: |
+        Yes, after your documents are verified at the FDVC, make sure to collect the stamped document verification report (Student Copy). You’ll need this report for the next steps in the process, so keep it safe.
+
+  utter_ask_submit_original_documents:
+    - text: |
+        Don’t worry, there’s no need to submit your original documents at the FDVC. The Nodal Officer will verify them and then hand them back to you. They’ll just keep copies for their records.
+
+  utter_ask_commerce_arts_eligibility:
+    - text: |
+        Make sure to double-check the eligibility criteria for the course or institution you're interested in before making your choice. If you're applying to Central Universities, remember that you'll need to qualify for the Central Universities Entrance Test (CUET) conducted by the National Testing Agency (NTA) for courses outside J&K and Ladakh. Keep an eye on the NTA/UGC website for the latest updates.
+
+  utter_ask_diploma_eligibility:
+    - text: |
+        Yes, if you’ve completed a Diploma in Engineering from a Polytechnic recognized by the UTs of Jammu & Kashmir or Ladakh, you're eligible for admission under the Lateral Entry Scheme. Just make sure your diploma is from AY 2022-23 or later. Admission depends on available seats from the previous academic session. It's a good idea to check the college or university’s official website for specific eligibility requirements before making your decision.
+
+  utter_ask_scholarship_benefits:
+    - text: |
+        **Benefits of PMSSS:**
+        1. The Scholarship covers Course fees and maintenance fees.
+        2. Course Fee is paid directly to the Institute, which includes tuition fees, university fees, exam fees, library fees, internet fees, etc.
+        3. Maintenance fee is paid to the student in 2 equal installments, covering hostel fees, buying books, mess charges, etc.
+
+  utter_ask_payment_process:
+    - text: |
+        The academic fee is handled by AICTE and paid directly to your institution annually as per the State Fee Regulatory Committee’s guidelines. Your maintenance allowance, on the other hand, will be directly deposited into your Aadhaar-linked bank account throughout the academic year.
+
+  utter_ask_academic_fee_payment:
+    - text: |
+        The academic fee is taken care of by AICTE and is paid directly to the institution on an annual basis, as per the orders of the State Fee Regulatory Committee of the concerned State/UT. You don’t need to worry about that!
+
+  utter_ask_maintenance_allowance:
+    - text: |
+        Your maintenance allowance will be directly deposited into your Aadhaar-linked bank account by AICTE throughout the academic year.
+
+  utter_ask_no_aadhaar:
+    - text: |
+        Unfortunately, no. Aadhaar is mandatory to benefit from the SSSJKL scheme.
+
+  utter_ask_aadhaar_not_seeded:
+    - text: |
+        No, the scholarship funds will only be disbursed to an Aadhaar-seeded savings account. It’s important to ensure your account is Aadhaar-linked before you start college to receive your scholarship on time.
+
+  utter_ask_maintenance_allowance_disbursed:
+    - text: |
+        Your maintenance allowance will be disbursed into a savings account that’s both Aadhaar-seeded and in your name.
+
+  utter_ask_other_scholarships:
+    - text: |
+        You can't double-dip with scholarships. If you try to claim both, it could lead to the cancellation of both scholarships. All your details will be verified on the National Scholarship Portal (NSP) by the Ministry of Information and Technology, Government of India, to prevent duplication. If you’re found benefiting from another scheme, your application for SSSJKL will be rejected with no further discussion.
+
+  utter_ask_online_counseling:
+    - text: |
+        Yes, after your documents are verified, a list of provisionally eligible students will be displayed on the SSSJKL student portal. You’ll need to attend online counseling to get your course or college allotment. AICTE conducts multiple rounds of allotment based on your choices, merit, and the reservation policy of the UT of J&K Government. If you're planning to take admission on your own in a Government institution or a prestigious university (like those requiring JEE, NEET, NATA, CLAT, CUET, etc.), participation in counseling isn’t mandatory. However, you must still submit your admission details in the Entrance Examination Tab on the student’s login. Allotments are made based on merit, the reservation policy, and any remaining vacancies after the counseling process.
+
+  utter_ask_iit_nit_scholarship:
+    - text: |
+        If you've qualified for entrance exams like NEET, JEE, CUET, NATA, or CLAT, or if you’ve been admitted to a government institution, you’re eligible for the SSSJKL scholarship. Just make sure you're registered under the SSSJKL scheme and have been declared eligible by the FDVC after document verification. Don't forget to submit your admission details in the Entrance Examination Tab in your student login. Your allotment will be based on merit, reservation policy, and any remaining vacancies after the counseling process.
+
+  utter_ask_mbbs_bds_scholarship:
+    - text: |
+        To be eligible for the scholarship in MBBS or BDS courses, you need to qualify through the NEET exam. If you’re registered under the SSSJKL scheme and declared eligible, you’ll need to submit your NEET Scorecard, NEET Allotment Letter from the respective NEET Counseling Agency, and your Joining Report in the Entrance Examination Tab of your student login. AICTE doesn't conduct counseling for medical streams, so you'll need to go through the NEET counseling process. Just a heads up: admission under the Management Quota isn’t allowed according to the Scheme Guidelines. Also, the Dental Council of India has limited admissions under the Prime Minister’s Special Scholarship Scheme to no more than five students per institution starting from the academic session 2021-22.
+
+  utter_ask_management_quota_scholarship:
+    - text: |
+        If you’ve been admitted under the Management Quota, unfortunately, you’re not eligible for the scholarship as per the Scheme Guidelines.
+
+  utter_ask_choice_of_college:
+    - text: |
+        Your college allotment will be based on the choices you’ve filled out, your position on the merit list, the reservation policy of the state, and the scheme guidelines. Once a college is allotted, it cannot be changed, so be sure to fill out your choices carefully!
+
+  utter_ask_college_allotment_not_choice:
+    - text: |
+        After you’re allotted a college/course through the online counseling process, you’ll need to choose one of the following options by clicking the appropriate button within the given timeframe. You can find the details in the Calendar of Events on the AICTE SSSJKL website:
+        ● **Freeze:** You’re happy with the seat allotted and want to keep it.
+        ● **Float:** You’re not satisfied with the current seat and want to participate in the next round of counseling. Keep in mind that if you choose to float, you lose any claim on the seat from the current round.
+        **Note:** If you don’t select an option within the given time, your seat will be automatically canceled.
+
+  utter_ask_freeze_option_next_step:
+    - text: |
+        After selecting the freeze option, the next step is to download your provisional allotment letter along with the Welcome Letter from the Institute. Reach out to the Nodal Officer/Mentor for further guidance, and then complete the joining process.
+
+  utter_ask_joining_process:
+    - text: |
+        You need to physically join the allotted college and complete the joining formalities on the portal before the last date mentioned in the calendar of events on the AICTE SSSJKL website. This process includes:
+        ● Uploading documents like Transfer/Migration Certificate, Character Certificate, 10th Class Passing Certificate, 10+2 Class Passing Certificate, 10th Class Marksheet, and 10+2 Marksheet.
+        ● The college will then verify your joining documents and upload your Joining Report.
+        Be sure that all your documents are correct. If it's discovered later that you’ve submitted a wrong category certificate, your admission/scholarship will be automatically canceled, and no further appeals will be entertained by AICTE. Remember, document verification and eligibility declaration based on the reservation policy of UT of J&K is handled by the concerned authorities.
+
+  utter_ask_own_category_joining_process:
+    - text: |
+        Yes, if you’ve been allotted admission under the “on my own” category, you still need to complete the joining formalities. For more details, check out the AICTE website.
+
+  utter_ask_scholarship_without_aicte_counseling:
+    - text: |
+        You won’t be eligible for the scholarship if you haven’t registered on the SSSJKL Portal. To be eligible, you must:
+        (a) Register under the SSSJKL scheme.
+        (b) Be declared eligible by the FDVC.
+        You’ll need to submit your admission-related documents in the Entrance Examination Tab in your student login, which will be verified within the stipulated date. The allotment is based on merit, the J&K Government's reservation policy, and any remaining vacancies after counseling. For more details, visit the AICTE website.
+
+  utter_ask_upload_joining_report_steps:
+    - text: |
+        Once you've been allotted a seat through AICTE's online counseling, you need to download the allotment letter from the portal after you’ve frozen your seat. Then, you must physically report to the Nodal Officer at the allotted institution. The Nodal Officer will download an auto-generated joining report from the college login, and you'll need to sign this report in their presence. The Nodal Officer will also sign and upload the joining report within the required timeframe for further action by the SSSJKL Cell of AICTE. Don’t forget to authenticate your Aadhaar and upload the auto-generated undertaking, which must be signed by you and verified by the Nodal Officer on the Portal before applying for the scholarship.
+
+  utter_ask_scholarship_assurance_own_category:
+    - text: |
+        Students registered under the "on my own" category are considered for scholarships only if there are vacancies left after AICTE counseling admissions. So, you’ll need to wait until your scholarship is confirmed.
+
+  utter_ask_eligibility_after_discontinuing_course:
+    - text: |
+        Unfortunately, you’re not eligible for the scholarship if you’ve already availed it through SSSJKL. The only exception is if you canceled your admission before the registration process started and didn’t receive any scholarship funds.
+
+  utter_ask_scholarship_for_another_ug_degree:
+    - text: |
+        No, as per the Scheme Guidelines, a student can only avail the SSSJKL scholarship once.
+
+  utter_ask_eligibility_after_previous_admission_in_jk:
+    - text: |
+        Yes, you can apply for the SSSJKL scholarship after canceling your previous admission, as long as you meet the basic eligibility criteria and haven’t availed any other scholarship through your previous admission, including SSSJKL.
+
+  utter_default:
+    - text: "I'm sorry, I didn't quite understand that. Could you please rephrase your question?"
+    - text: "Hmm, I'm not sure I got that. Could you try asking in a different way?"
+    - text: "I didn't catch that. Could you provide more details or ask another question?"
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

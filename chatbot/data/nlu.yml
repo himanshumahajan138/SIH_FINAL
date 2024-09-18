@@ -1,0 +1,1104 @@
+version: "3.1"
+
+nlu:
+  - intent: get_started
+    examples: |
+      - /get_started
+
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
+      - howdy
+      - what's up
+      - greetings
+      - how's it going
+
+  - intent: goodbye
+    examples: |
+      - cu
+      - good by
+      - see you later
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - take care
+      - catch you later
+      - see you soon
+
+  - intent: affirm
+    examples: |
+      - yes
+      - y
+      - indeed
+      - of course
+      - that sounds good
+      - correct
+      - absolutely
+      - definitely
+      - sure thing
+      - that's right
+
+  - intent: deny
+    examples: |
+      - no
+      - n
+      - never
+      - I don't think so
+      - don't like that
+      - no way
+      - not really
+      - I disagree
+      - that's not right
+      - nope
+
+  - intent: mood_great
+    examples: |
+      - perfect
+      - great
+      - amazing
+      - feeling like a king
+      - wonderful
+      - I am feeling very good
+      - I am great
+      - I am amazing
+      - I am going to save the world
+      - super stoked
+      - extremely good
+      - so so perfect
+      - so good
+      - so perfect
+      - couldn't be better
+      - I'm on top of the world
+
+  - intent: mood_unhappy
+    examples: |
+      - my day was horrible
+      - I am sad
+      - I don't feel very well
+      - I am disappointed
+      - super sad
+      - I'm so sad
+      - sad
+      - very sad
+      - unhappy
+      - not good
+      - not very good
+      - extremely sad
+      - so saad
+      - so sad
+      - I'm feeling down
+      - I'm not in a good mood
+
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?
+      - are you real?
+      - what are you?
+      - are you an AI?
+      - is this a robot?
+
+  - intent: ask_eligibility_conditions
+    examples: |
+      - What are the eligibility criteria for scholarships?
+      - Can you tell me the eligibility requirements for scholarships?
+      - What conditions should I fulfill for a scholarship?
+      - What do I need to be eligible for scholarships?
+      - How do I know if I'm eligible for scholarships?
+      - I fulfill academic qualification for SSSJKL. What other conditions should I fulfill?
+      - What other conditions should I fulfill for SSSJKL?
+      - What are the other criteria for SSSJKL?
+      - What are the eligibility criteria for SSSJKL?
+      - Can you tell me the eligibility requirements for SSSJKL?
+      - What are the eligibility criteria for the scholarship?
+      - Who is eligible to apply for the scholarship?
+      - Can you tell me the eligibility requirements?
+      - What conditions do I need to meet to apply?
+      - Am I eligible for the scholarship?
+      - What are the qualifications needed to apply?
+      - Who can apply for this scholarship?
+      - What are the eligibility conditions?
+      - What do I need to qualify for this scholarship?
+      - Is there any eligibility criterion I should know about?
+      - Are there specific requirements to be eligible for this scholarship?
+      - What are the basic eligibility criteria?
+      - What makes someone eligible for the scholarship?
+      - How do I know if I’m eligible to apply?
+      - What are the conditions for eligibility?
+  - intent: ask_registration_process
+    examples: |
+      - I am an eligible candidate for the SSSJKL scholarship. How can I register for this scholarship?
+      - How do I register for the SSSJKL scholarship?
+      - What is the registration process for SSSJKL?
+      - How can I apply for SSSJKL?
+      - How do I sign up for SSSJKL?
+      - How can I register for a scholarship?
+      - What is the registration process for scholarships?
+      - How do I apply for scholarships?
+      - What are the steps to sign up for scholarships?
+      - How do I get started with a scholarship application?
+      - How do I register for the scholarship?
+      - Can you guide me through the registration process?
+      - What are the steps to register for the scholarship?
+      - How can I sign up for the scholarship?
+      - What is the process for registration?
+      - How do I start my application?
+      - Can you explain how to register?
+      - What do I need to do to register?
+      - Is there a registration guide I can follow?
+      - How can I begin the registration process?
+      - Where do I register for the scholarship?
+      - What’s the procedure for registering?
+      - How do I create an account to apply?
+      - What are the first steps to register?
+  - intent: ask_technical_issues
+    examples: |
+      - I'm facing technical problems while applying.
+      - How do I resolve technical issues during registration?
+      - I can't submit my application due to a technical error.
+      - What should I do if I encounter technical difficulties?
+      - How can I fix the errors I'm seeing on the website?
+      - There’s a glitch when I try to register, what should I do?
+      - Who can help with technical issues on the site?
+      - The website is not working correctly, how do I fix this?
+      - I’m having trouble with the application portal, any suggestions?
+      - What should I do if the site crashes while applying?
+      - How do I report a technical problem with the website?
+      - I need help with a technical issue on the scholarship portal.
+      - My application won't go through because of a technical problem.
+      - What can I do about a website error?
+      - I am not able to register under the scholarship and facing technical issues.
+      - What should I do if I face a technical issue during registration?
+      - I have a problem registering for the scholarship. Can you help?
+      - I'm having technical issues with registration.
+      - What should I do if I can't register due to a technical issue?
+      - My registration process is stuck, how do I resolve this?
+      - I keep getting an error during the registration, what now?
+      - The website is not working, what should I do?
+      - I'm experiencing issues with the online portal, can you assist?
+      - I am not able to register under SSSJKL scholarship and facing Technical Issue?
+      - What should I do if I face a technical issue during SSSJKL registration?
+      - I have a problem registering for SSSJKL. Can you help?
+      - I'm having technical issues with SSSJKL registration.
+      - What should I do if I can't register for SSSJKL due to a technical issue?
+  - intent: ask_helpline_info
+    examples: |
+      - Is there a helpline I can contact?
+      - What’s the helpline number for support?
+      - How do I reach the scholarship support team?
+      - Can I get the contact details for the helpline?
+      - Where can I find helpline information?
+      - I need the helpline number for scholarship queries.
+      - Who can I contact for help with my application?
+      - Is there a customer support line I can call?
+      - What’s the best way to get in touch with support?
+      - Do you have a helpline for applicants?
+      - How can I contact the helpline?
+      - I need assistance, is there a support number available?
+      - Who should I contact if I need help?
+      - Is there a support team I can reach out to?
+      - Is there a helpline number or email for scholarship queries?
+      - How can I contact the helpline for scholarship queries?
+      - What is the helpline number for scholarship assistance?
+      - Where can I get help for my scholarship questions?
+      - Can you provide the contact information for scholarship support?
+      - Is there a support line for technical issues with the scholarship portal?
+      - How do I reach customer service for the scholarship program?
+      - Who do I contact for issues with my application?
+      - Is there a way to speak to someone about my scholarship application?
+      - Is there any Helpline No./E-mail/Grievance Mechanism for SSSJKL Scholarship Queries?
+      - How can I contact the helpline for SSSJKL scholarship queries?
+      - What is the helpline number for SSSJKL?
+      - Where can I get help for SSSJKL queries?
+      - Can you provide the contact information for SSSJKL support?
+  - intent: ask_required_documents
+    examples: |
+      - What documents do I need to submit for the scholarship?
+      - Can you list the required documents for the application?
+      - What paperwork is necessary to apply?
+      - Which documents are needed for the scholarship application?
+      - Do I need any specific documents to apply?
+      - What documents are required for registration?
+      - Can you tell me what documents I’ll need?
+      - What supporting documents are required?
+      - What do I need to submit with my application?
+      - Are there any mandatory documents for the application?
+      - What documentation is necessary to complete the application?
+      - What documents should I prepare for the application process?
+      - What files do I need to upload for my application?
+      - What are the essential documents for applying?
+      - Which documents are required to upload after registration?
+      - What documents do I need to submit for the scholarship?
+      - What are the required documents for the application?
+      - What documents do I need to upload for the scholarship?
+      - Can you tell me which documents I need to upload for the application?
+      - What paperwork is necessary to complete my scholarship application?
+      - Which certificates should I submit for the scholarship?
+      - What documents are essential for the application process?
+      - Do I need to upload any specific documents for verification?
+      - Which documents are required to upload after registration?
+      - What documents do I need to submit for SSSJKL?
+      - What are the required documents for SSSJKL?
+      - What documents do I need to upload for SSSJKL?
+      - Can you tell me which documents I need to upload for SSSJKL?
+  - intent: ask_upload_issues
+    examples: |
+      - I'm having trouble uploading my documents.
+      - How do I fix upload errors during the application process?
+      - My documents won’t upload, what should I do?
+      - What if I can’t upload my files?
+      - How do I resolve issues with uploading documents?
+      - The upload isn’t working, what can I do?
+      - I keep getting an error when trying to upload, any advice?
+      - Why can't I upload my files?
+      - How do I solve upload problems on the site?
+      - I’m facing issues with document upload, how do I fix it?
+      - What should I do if the upload keeps failing?
+      - The system won’t accept my uploads, what now?
+      - How can I upload my documents successfully?
+      - There’s an issue with uploading my files, any solutions?
+      - I am not able to upload photos and signatures on the portal.
+      - Can't upload my documents on the portal.
+      - Having trouble uploading photos.
+      - Issues with uploading my signature on the portal.
+      - The upload function isn't working for me, what should I do?
+      - My document uploads keep failing, how do I fix this?
+      - I'm unable to upload required files, any advice?
+      - The system won't let me upload my documents, what now?
+      - How can I resolve issues with document uploads?
+  - intent: ask_next_steps_after_submission
+    examples: |
+      - What happens after I submit my application?
+      - What are the next steps after submission?
+      - What should I do after submitting the application?
+      - Is there anything I need to do after applying?
+      - What comes next after my application is submitted?
+      - What is the process after submission?
+      - Do I need to follow up after submitting the application?
+      - What are the steps after submitting my documents?
+      - How do I know my application was received?
+      - What’s the next step after I've applied?
+      - Will I receive any confirmation after submission?
+      - What should I expect after submitting my application?
+      - What do I do once my application is submitted?
+      - I have submitted my online application form. What should I do next?
+      - What should I do after submitting the application?
+      - What’s the next step after submitting my application?
+      - I completed my application, what’s next?
+      - What's the follow-up process after submitting my application?
+      - I’ve finished the application, now what?
+      - After submission, what should I expect?
+      - What are the steps following application submission?
+      - Is there anything else I need to do after submitting?
+  - intent: ask_edit_application
+    examples: |
+      - Can I edit my application after submitting it?
+      - How do I make changes to my application?
+      - Is it possible to modify my application?
+      - What if I need to update my application after submission?
+      - Can I change any details in my application?
+      - How do I edit the submitted application?
+      - Can I go back and edit my application form?
+      - What’s the process for editing my application?
+      - Is there a way to correct mistakes in my application?
+      - Can I update my information after applying?
+      - How can I revise my application after submission?
+      - Is it too late to make changes to my application?
+      - Can I modify the application form once it’s submitted?
+      - What should I do if I need to edit my application?
+      - I have submitted my online application for the scholarship. Is it possible to edit my application?
+      - Can I edit my application after submission?
+      - Is there a way to modify my application after it’s been submitted?
+      - Can I change my details after submitting the form?
+      - How can I update my application post-submission?
+      - Is it too late to edit my scholarship application?
+      - What if I made a mistake in my application, can I fix it?
+      - Can I make changes to my application after it’s finalized?
+      - Is there a way to correct information after submission?
+  - intent: ask_fdv_center_charges
+    examples: |
+      - Is there a fee for verification at the FDV center?
+      - Do I have to pay anything at the FDV center?
+      - Are there any charges for FDV center verification?
+      - What are the costs involved at the FDV center?
+      - Do I need to pay a fee for document verification?
+      - How much does the FDV center charge?
+      - Are there any fees at the facilitation center?
+      - What are the FDV center charges?
+      - Is the FDV verification free of cost?
+      - Will I be charged for verification at the FDV center?
+      - Is there a payment required at the FDV center?
+      - Are there any costs associated with FDV center verification?
+      - Do I need to pay anything at the facilitation center?
+      - Will I be charged at the verification center?
+      - Do I need to pay for document verification at the verification center?
+      - Is there a fee at the document verification center?
+      - Will the verification center charge me for the process?
+      - Are there any charges at the facilitation center?
+      - Is the document verification process free?
+      - Do I have to pay to get my documents verified?
+      - What are the fees for document verification?
+      - Is there a cost involved in the document verification process?
+  - intent: ask_fdv_verification_necessity
+    examples: |
+      - Is FDV verification necessary for the scholarship?
+      - Do I have to go through FDV verification?
+      - Is it mandatory to complete FDV verification?
+      - Why do I need to do FDV verification?
+      - Is FDV verification required to get the scholarship?
+      - Can I skip FDV verification?
+      - Is the FDV center verification compulsory?
+      - Do I really need to do FDV verification?
+      - Is it necessary to go to the FDV center for verification?
+      - What happens if I don’t do FDV verification?
+      - Why is FDV verification important?
+      - Is it necessary to visit the FDV center?
+      - Is FDV verification a required step?
+      - I have submitted my application. Is document verification necessary?
+      - Do I need to go to the verification center for document verification?
+      - Is visiting the verification center mandatory after submitting the application?
+      - Is verification required after applying?
+      - Do I need to physically visit the center for verification?
+      - Is it compulsory to go to the verification center?
+      - Must I attend the verification center after applying?
+      - Can I skip the document verification process?
+      - Is there any need for verification after form submission?
+  - intent: ask_facilitation_centre
+    examples: |
+      - Where can I find a facilitation center?
+      - How do I locate the nearest facilitation center?
+      - Can you tell me where the facilitation centers are?
+      - What is a facilitation center?
+      - How do I find a facilitation center for verification?
+      - Where is the nearest facilitation center located?
+      - Can you help me find a facilitation center?
+      - Where do I go for facilitation center verification?
+      - How do I know which facilitation center to visit?
+      - What’s the address of the nearest facilitation center?
+      - How do I find the facilitation center in my area?
+      - Where are the facilitation centers for this process?
+      - Where can I get my documents verified at a facilitation center?
+      - What’s the location of the nearest facilitation center?
+      - To which center should I go for document verification?
+      - Which center should I visit for verification?
+      - Where do I go for document verification?
+      - Which verification center should I go to?
+      - Where should I go to get my documents verified?
+      - What is the nearest center for document verification?
+      - Which center handles document verification?
+      - Can you tell me the verification center location?
+      - Where is the facilitation center for my application?
+
+  - intent: ask_document_after_verification
+    examples: |
+      - What happens to my documents after verification?
+      - Will I get my documents back after verification?
+      - What do I need to do with my documents after verification?
+      - Are my documents returned after verification?
+      - What should I do with the documents after they are verified?
+      - Do I need to keep the documents after they are verified?
+      - What’s the procedure for documents after verification?
+      - What happens to the documents post-verification?
+      - Will the documents be kept after verification?
+      - What do I do with the verified documents?
+      - Are the documents kept by the FDV center?
+      - What is done with my documents after they’ve been verified?
+      - How are the documents handled after verification?
+      - Is there any document I should collect after the document verification process?
+      - Do I need to collect any document after verification at the center?
+      - Should I take any document from the verification center after the process?
+      - What document should I collect after verification?
+      - Will I get any proof after my documents are verified?
+      - Do I need to pick up anything after the verification process?
+      - Is there a receipt or document I need to collect after verification?
+      - What should I take from the verification center once my documents are verified?
+      - Do they give any document after the verification process is completed?
+
+  - intent: ask_submit_original_documents
+    examples: |
+      - Do I need to submit original documents?
+      - Should I submit the original certificates for verification?
+      - Is it necessary to provide original documents?
+      - Are original documents required for the application?
+      - Can I submit photocopies instead of originals?
+      - Will the original documents be returned after submission?
+      - Do I have to hand over original documents?
+      - What if I don’t want to submit original documents?
+      - Are original documents mandatory for the process?
+      - Can I keep my original documents and submit copies instead?
+      - Is submitting original documents compulsory?
+      - Are originals needed or will copies suffice?
+      - Do they ask for original documents during verification?
+      - Are the original documents to be submitted at the verification center?
+      - Do I need to submit original documents at the verification center?
+      - Should I leave my original documents at the verification center?
+      - Will the verification center keep my original documents?
+      - Do I need to hand over my original documents?
+      - Are originals required to be submitted during verification?
+      - Must I submit my original certificates for verification?
+      - Will they keep my original documents at the center?
+      - Are originals or copies needed at the verification center?
+
+  - intent: ask_commerce_arts_eligibility
+    examples: |
+      - Is this scholarship available for commerce students?
+      - Can arts students apply for this scholarship?
+      - Am I eligible for the scholarship if I’m studying commerce?
+      - Can students from the arts stream apply for this scholarship?
+      - Is this scholarship open to commerce stream students?
+      - Are arts stream students eligible for the scholarship?
+      - Can I apply if I’m pursuing a degree in commerce?
+      - Are commerce and arts students eligible for this scholarship?
+      - Is the scholarship available for students in commerce or arts?
+      - Can someone studying in the arts stream apply?
+      - Is this scholarship for students in commerce and arts streams?
+      - Can a student in the arts or commerce field get this scholarship?
+      - Who is eligible among commerce and arts students?
+      - Does this scholarship cover commerce and arts streams?
+      - I have passed 10+2 in Commerce/Arts stream, am I eligible for Engineering?
+      - Can I do engineering after 10+2 in Commerce/Arts?
+      - Am I eligible for Engineering if I studied Commerce/Arts?
+      - Can Commerce/Arts students apply for Engineering?
+      - Is it possible to study engineering after Commerce/Arts?
+      - Can I shift from Commerce/Arts to Engineering?
+      - Are Commerce/Arts students allowed to pursue Engineering?
+      - Can someone with a Commerce/Arts background study Engineering?
+      - Is engineering an option for Commerce/Arts students?
+      - Can Commerce/Arts students apply for Engineering?
+  
+  - intent: ask_diploma_eligibility
+    examples: |
+      - Are diploma students eligible for this scholarship?
+      - Can I apply for the scholarship if I’m doing a diploma course?
+      - Is this scholarship open to diploma holders?
+      - Can diploma students apply for this scholarship?
+      - Is a diploma course eligible for the scholarship?
+      - Am I eligible for the scholarship with a diploma?
+      - Does this scholarship cover diploma programs?
+      - Can someone pursuing a diploma apply for this scholarship?
+      - Is a diploma course acceptable for this scholarship?
+      - Are students enrolled in diploma courses eligible?
+      - Is this scholarship available for diploma students?
+      - Can diploma students benefit from this scholarship?
+      - Can a diploma student qualify for this scholarship?
+      - I have passed a diploma in engineering. Can I apply for the scholarship?
+      - Can I apply for the scholarship with a diploma in engineering?
+      - Am I eligible for the scholarship after completing a diploma in engineering?
+      - Can diploma holders apply for this scholarship?
+      - Can I get a scholarship after a diploma in engineering?
+      - Is a diploma in engineering enough to apply for this scholarship?
+      - Can diploma graduates apply for the scholarship?
+      - Is the scholarship available for those with a diploma in engineering?
+      - Can I apply with a diploma, or do I need a full degree?
+      - I have passed Diploma in Engineering from UTs J&K and Ladakh. Can I apply under SSSJKL?
+      - Can I apply for SSSJKL with a Diploma in Engineering from J&K/Ladakh?
+      - Am I eligible for SSSJKL after completing a Diploma in Engineering?
+      - Can Diploma holders from J&K/Ladakh apply for SSSJKL?
+
+  - intent: ask_scholarship_benefits
+    examples: |
+      - What are the benefits of the PMSSS scholarship?
+      - Can you tell me about the benefits of PMSSS?
+      - What does the PMSSS scholarship cover?
+      - What are the advantages of the PMSSS scholarship?
+      - How does the PMSSS scholarship benefit students?
+      - What does the PMSSS scholarship provide?
+      - What are the benefits of receiving a PMSSS scholarship?
+      - How is the PMSSS scholarship beneficial?
+      - Can you explain the benefits of PMSSS?
+      - What does the PMSSS scholarship include?
+      - What is covered by the PMSSS scholarship?
+      - What financial support does the PMSSS scholarship offer?
+      - How does the PMSSS scholarship help students financially?
+      - What expenses are covered by the PMSSS scholarship?
+      - What are the key benefits of the PMSSS program?
+      - How is the PMSSS scholarship advantageous for students?
+      - What kind of support does the PMSSS scholarship provide?
+      - Can you detail the benefits of the PMSSS scholarship?
+      - How does PMSSS support students financially?
+      - What kind of financial assistance is provided by PMSSS?
+      - What does the PMSSS scholarship cover in terms of expenses?
+      - How does the PMSSS scholarship help with education costs?
+      - What are the financial benefits of the PMSSS scholarship?
+      - How is the PMSSS scholarship structured in terms of benefits?
+      - What benefits does the PMSSS scholarship offer for students?
+      - Can you provide information on what PMSSS covers?
+      - What does the PMSSS scholarship pay for?
+      - How is the PMSSS scholarship designed to help students?
+      - What financial benefits are included in the PMSSS scholarship?
+      - How does PMSSS assist with course and living expenses?
+      - What support does PMSSS provide to students?
+      - What are the specific benefits of the PMSSS scholarship program?
+      - How does the PMSSS scholarship support students financially?
+      - What does the PMSSS scholarship include for course and maintenance fees?
+      - What are the benefits of this scholarship?
+      - Can you tell me about the benefits of the scholarship program?
+      - What does this scholarship cover?
+      - What are the advantages of receiving this scholarship?
+      - How does the scholarship benefit students?
+      - What does the scholarship provide for recipients?
+      - What are the benefits of being awarded this scholarship?
+      - How is this scholarship beneficial to students?
+      - Can you explain the benefits of the scholarship program?
+      - What does the scholarship include?
+      - What is covered by the scholarship?
+      - What financial support does the scholarship offer?
+      - How does the scholarship help students financially?
+      - What expenses are covered by the scholarship?
+      - What are the key benefits of this scholarship program?
+      - How is the scholarship advantageous for students?
+      - What kind of support does the scholarship provide?
+      - Can you detail the benefits of the scholarship?
+      - How does this scholarship support students financially?
+      - What kind of financial assistance is provided by the scholarship?
+      - What does the scholarship cover in terms of expenses?
+      - How does the scholarship help with education costs?
+      - What are the financial benefits of the scholarship?
+      - How is the scholarship structured in terms of benefits?
+      - What benefits does the scholarship offer for students?
+      - Can you provide information on what the scholarship covers?
+      - What does the scholarship pay for?
+      - How is the scholarship designed to help students?
+      - What financial benefits are included in the scholarship?
+      - How does the scholarship assist with course and living expenses?
+      - What support does the scholarship provide to students?
+      - What are the specific benefits of the scholarship program?
+      - How does the scholarship support students financially?
+      - What does the scholarship include for course and maintenance fees?
+
+  - intent: ask_payment_process
+    examples: |
+      - How will I get paid under this scholarship?
+      - How do I receive payments from the scholarship?
+      - How does the payment process work for this scholarship?
+      - Who handles the payment of fees and allowances?
+      - How are the fees and maintenance allowance paid?
+      - Will the scholarship pay for my fees and provide an allowance?
+      - Who pays the academic fees and maintenance allowance?
+      - Is there a payment process for fees and allowance?
+      - How is the payment of fees and allowances managed?
+      - What is the process for receiving scholarship payments?
+      - How do I get my academic fees and allowance paid?
+      - Who is responsible for the payment of fees and allowances?
+      - Will the scholarship cover both my fees and allowance?
+      - How does the scholarship fund the fees and allowance?
+      - Who disburses the payments for the scholarship?
+      - How do the academic fees and maintenance allowance get paid?
+      - Who pays for my college fees and maintenance allowance?
+      - How do I get the scholarship payments?
+      - What is the process for getting fees and allowances paid?
+      - Who takes care of the payment of fees and allowance?
+      - How are the scholarship payments made?
+      - Will I get both my fees and allowance paid by the scholarship?
+
+  - intent: ask_academic_fee_payment
+    examples: |
+      - How is the academic fee paid under this scholarship?
+      - Will the scholarship cover my academic fees?
+      - How do I get my academic fees paid through the scholarship?
+      - Does the scholarship include academic fee payment?
+      - How are the academic fees handled by the scholarship?
+      - Will my tuition fees be paid through the scholarship?
+      - Is the academic fee covered by the scholarship?
+      - Who pays the academic fee under this scholarship?
+      - Will the scholarship pay my college fees?
+      - How does the scholarship handle academic fee payments?
+      - Is my academic fee paid directly to the institution?
+      - Will the scholarship cover all academic fees?
+      - How do academic fees get paid under this scholarship?
+      - Who will pay the academic fee?
+      - Who is responsible for paying the academic fees?
+      - Who pays for the tuition fees?
+      - How is the academic fee covered?
+      - Who takes care of the academic fees?
+      - Is the academic fee paid by someone else?
+      - Who handles the payment of academic fees?
+      - Who covers the cost of tuition?
+      - Is there a sponsor for academic fees?
+
+  - intent: ask_maintenance_allowance
+    examples: |
+      - Is there a maintenance allowance included in the scholarship?
+      - Will I receive a maintenance allowance?
+      - Does this scholarship provide a maintenance allowance?
+      - How much is the maintenance allowance under this scholarship?
+      - Is maintenance allowance covered in the scholarship?
+      - Will the scholarship give me a maintenance allowance?
+      - Do I get a maintenance allowance along with the scholarship?
+      - What is the maintenance allowance amount?
+      - How does the scholarship handle maintenance allowance?
+      - Is a monthly maintenance allowance provided?
+      - Will I be given any maintenance allowance?
+      - Does the scholarship include maintenance allowance payments?
+      - How much maintenance allowance will I receive?
+      - Is there an allowance for maintenance costs?
+      - Who will pay the maintenance allowance?
+      - Who is responsible for paying the maintenance allowance?
+      - How is the maintenance allowance disbursed?
+      - Who covers the maintenance costs?
+      - Who handles the maintenance allowance?
+      - Is there a payment for maintenance costs?
+      - Who provides the maintenance allowance?
+      - How do I receive the maintenance allowance?
+      - Who funds the maintenance allowance?
+
+  - intent: ask_no_aadhaar
+    examples: |
+      - What if I don’t have an Aadhaar card?
+      - Can I apply without an Aadhaar card?
+      - Is Aadhaar mandatory for this scholarship?
+      - What should I do if I don’t have an Aadhaar card?
+      - Can I apply for the scholarship without Aadhaar?
+      - Is it possible to submit the application without Aadhaar?
+      - Do I need an Aadhaar card to apply for this scholarship?
+      - How can I apply if I don’t have Aadhaar?
+      - Can I use another ID if I don’t have Aadhaar?
+      - Is there an alternative if I don’t have an Aadhaar card?
+      - What are the options if I don’t have an Aadhaar number?
+      - Can I proceed without providing Aadhaar details?
+      - Is Aadhaar a required document for this scholarship?
+      - How do I apply for the scholarship without Aadhaar?
+      - I do not have an Aadhaar. Will I be able to get the benefit?
+      - Can I get benefits without an Aadhaar?
+      - Will I receive the scholarship if I don't have an Aadhaar card?
+      - Is Aadhaar necessary to receive the benefits?
+      - Can I apply without an Aadhaar card?
+      - What happens if I don't have Aadhaar?
+      - Will the lack of Aadhaar affect my eligibility?
+      - Is it possible to get the scholarship without Aadhaar?
+      - Can I still receive the benefits if I don’t have Aadhaar?
+
+  - intent: ask_aadhaar_not_seeded
+    examples: |
+      - What should I do if my Aadhaar is not seeded with my bank account?
+      - How do I proceed if my Aadhaar isn’t linked to my bank account?
+      - Can I apply for the scholarship if my Aadhaar is not seeded?
+      - Is it necessary to seed my Aadhaar with my bank account?
+      - What happens if my Aadhaar isn’t linked to my bank account?
+      - How do I link my Aadhaar to my bank account for the scholarship?
+      - What if my Aadhaar number isn’t seeded with my bank account?
+      - Do I need to link my Aadhaar to apply for the scholarship?
+      - Can I still apply if my Aadhaar isn’t seeded?
+      - How do I check if my Aadhaar is linked to my bank account?
+      - Is Aadhaar seeding mandatory for receiving the scholarship?
+      - What steps do I take if my Aadhaar is not linked to my bank account?
+      - Will my application be rejected if Aadhaar is not seeded?
+      - How can I seed my Aadhaar with my bank account?
+      - My Aadhaar is not seeded with a bank account. Will I receive the scholarship?
+      - What if my Aadhaar is not linked to my bank account? Will I still get the scholarship?
+      - Can I get the scholarship if my Aadhaar is not connected to my bank account?
+      - Is it necessary for Aadhaar to be linked with the bank account to get the scholarship?
+      - Will I lose the scholarship if Aadhaar isn’t linked to my bank?
+      - Is bank account seeding with Aadhaar mandatory for the scholarship?
+      - Does Aadhaar need to be linked to my bank account for the scholarship?
+      - What if Aadhaar is not connected to my bank—can I still get the scholarship?
+      - Do I need to link my Aadhaar with the bank to receive the scholarship?
+
+  - intent: ask_maintenance_allowance_disbursed
+    examples: |
+      - When will the maintenance allowance be disbursed?
+      - How is the maintenance allowance disbursed?
+      - When do I receive my maintenance allowance?
+      - How often is the maintenance allowance paid out?
+      - Is the maintenance allowance disbursed monthly?
+      - What is the schedule for maintenance allowance disbursement?
+      - When can I expect the maintenance allowance to be credited?
+      - How do I know if my maintenance allowance has been disbursed?
+      - Will the maintenance allowance be directly transferred to my account?
+      - How long does it take for the maintenance allowance to be disbursed?
+      - What’s the process for maintenance allowance disbursement?
+      - Is there a specific date for maintenance allowance payment?
+      - How do I track the disbursement of my maintenance allowance?
+      - When is the maintenance allowance credited to students?
+      - In which bank account will the maintenance allowance be disbursed?
+      - Where will my maintenance allowance be sent?
+      - Which account will receive the maintenance allowance?
+      - Into which bank account will the maintenance allowance go?
+      - Where is the maintenance allowance deposited?
+      - How do I know which account gets the maintenance allowance?
+      - Is the maintenance allowance sent to a specific bank account?
+      - Where does the maintenance allowance get credited?
+      - How do I find out which bank account gets the maintenance allowance?
+
+  - intent: ask_other_scholarships
+    examples: |
+      - Are there any other scholarships available?
+      - What other scholarships can I apply for?
+      - Can I apply for multiple scholarships?
+      - Is there a list of other scholarships?
+      - Are there any additional scholarships I should know about?
+      - What are the other scholarships I can consider?
+      - Are there any other scholarship options available?
+      - Can I combine this scholarship with another one?
+      - What other scholarships are open for application?
+      - Are there more scholarships I can apply for?
+      - Can I apply for other scholarships besides this one?
+      - Are there any other scholarships offered by the government?
+      - What other financial aid or scholarships are available?
+      - Can you suggest other scholarships I might be eligible for?
+      - Can I take the benefit of other scholarship schemes along with this one?
+      - Can I apply for other scholarships while availing benefits from this scholarship?
+      - Is it allowed to take multiple scholarships including this one?
+      - Can I receive multiple scholarships at the same time?
+      - Am I eligible for other scholarships if I get this one?
+      - Can I combine this scholarship with others?
+      - Is it possible to get other scholarships while receiving this one?
+      - Can I apply for different scholarships simultaneously?
+      - Is there a restriction on applying for other scholarships while receiving this one?
+
+  - intent: ask_online_counseling
+    examples: |
+      - Is online counseling available for the scholarship?
+      - How do I access online counseling for this scholarship?
+      - Can I attend counseling sessions online?
+      - Is there an online counseling process for this scholarship?
+      - How do I participate in online counseling?
+      - Are online counseling sessions available?
+      - What is the procedure for online counseling?
+      - Can I complete the counseling online?
+      - Is online counseling mandatory for this scholarship?
+      - How do I register for online counseling?
+      - Will the counseling be conducted online?
+      - Is there an option for online counseling instead of in-person?
+      - How can I take part in online counseling sessions?
+      - What are the steps for joining online counseling?
+      - Is attending online counseling mandatory for eligible students to avail benefits?
+      - Do I have to attend online counseling to get the scholarship benefits?
+      - Is it compulsory to participate in online counseling for this scholarship?
+      - Is online counseling necessary for receiving the benefits?
+      - Must I attend online counseling to qualify for the benefits?
+      - Is participation in online counseling required for this scholarship?
+      - Will I miss out on benefits if I don’t attend online counseling?
+      - Do I need to join online counseling to receive the scholarship?
+      - Is it mandatory to attend online counseling for getting the scholarship?
+
+  - intent: ask_iit_nit_scholarship 
+    examples: |
+      - Is this scholarship available for IIT students?
+      - Can NIT students apply for this scholarship?
+      - Are IIT and NIT students eligible for this scholarship?
+      - Does this scholarship cover IIT and NIT students?
+      - Can I apply if I’m studying at an IIT?
+      - Is this scholarship open to students of NITs?
+      - Are there specific scholarships for IIT and NIT students?
+      - Is this scholarship applicable for NIT students?
+      - Can IIT students benefit from this scholarship?
+      - Are IIT and NIT students included in this scholarship?
+      - Is the scholarship available for students at IITs and NITs?
+      - Can a student from an IIT apply for this scholarship?
+      - Is this scholarship for students studying at IITs or NITs?
+      - Do IIT and NIT students qualify for this scholarship?
+      - I wish to pursue my studies in IIT/NIT/Institute of National Importance/Centrally funded Institutions/Government Institutions in my own category without participating in the counseling process. Am I eligible for a scholarship?
+      - Can I get the scholarship if I study at IIT/NIT without attending the counseling?
+      - Is it possible to get the scholarship if I don't participate in the counseling but join IIT or NIT?
+      - Can I receive the scholarship if I opt out of the counseling process but attend a top institute?
+      - Will I be eligible for the scholarship if I skip the counseling but join a prestigious institution?
+
+  - intent: ask_mbbs_bds_scholarship
+    examples: |
+      - Is this scholarship available for MBBS students?
+      - Can BDS students apply for this scholarship?
+      - Are MBBS and BDS students eligible for the scholarship?
+      - Does this scholarship cover MBBS and BDS courses?
+      - Can I apply if I’m studying MBBS?
+      - Is this scholarship open to BDS students?
+      - Are there scholarships specifically for MBBS and BDS students?
+      - Is this scholarship applicable for MBBS students?
+      - Can BDS students benefit from this scholarship?
+      - Are MBBS and BDS students included in this scholarship?
+      - Is the scholarship available for MBBS and BDS students?
+      - Can a medical student in MBBS apply for this scholarship?
+      - Is this scholarship for students studying MBBS or BDS?
+      - Do MBBS and BDS students qualify for this scholarship?
+      - I wish to pursue MBBS/BDS/Medical courses, am I eligible for a scholarship?
+      - Can I get the scholarship for MBBS or BDS courses?
+      - Am I eligible for the scholarship if I join a medical course?
+      - Will the scholarship cover my medical studies?
+      - Is the scholarship available for MBBS or BDS students?
+      - Can medical students apply for this scholarship?
+      - Does this scholarship support students in medical fields like MBBS or BDS?
+
+  - intent: ask_management_quota_scholarship
+    examples: |
+      - Is there a scholarship for students under management quota?
+      - Can I get a scholarship if I’m admitted through management quota?
+      - Are management quota students eligible for this scholarship?
+      - Does this scholarship cover management quota admissions?
+      - Can I apply for the scholarship if I joined through management quota?
+      - Is the scholarship applicable for management quota seats?
+      - Do management quota students qualify for this scholarship?
+      - Are there any scholarships for management quota students?
+      - Is management quota admission covered under this scholarship?
+      - Can students under management quota receive this scholarship?
+      - Are management quota admissions eligible for financial aid?
+      - Does this scholarship support management quota students?
+      - Can I get a scholarship even if I’m in management quota?
+      - I have taken admission under the Management Quota, am I eligible for a scholarship?
+      - Can I get the scholarship if I took admission through Management Quota?
+      - Is Management Quota admission eligible for the scholarship?
+      - Does the scholarship apply to students admitted via Management Quota?
+      - If I join through Management Quota, can I still get the scholarship?
+      - Is the scholarship available for Management Quota admissions?
+
+  - intent: ask_choice_of_college
+    examples: |
+      - Can I choose my preferred college under this scholarship?
+      - Is it possible to select my college of choice?
+      - Do I get to choose which college I want to attend?
+      - Can I apply to the college of my choice with this scholarship?
+      - How do I pick my preferred college for the scholarship?
+      - Is college selection allowed under this scholarship?
+      - Will I be able to select the college I want?
+      - Can I choose my college under this program?
+      - How do I choose my preferred college?
+      - Does this scholarship allow me to select my college?
+      - Can I apply to a college of my choice?
+      - Is it possible to choose a specific college?
+      - Will I have the option to select my desired college?
+      - How will I get the college of my choice?
+      - How is college allotment done under the scholarship scheme?
+      - Can I choose my college under the scholarship scheme?
+      - Will I be able to pick my college with this scholarship?
+      - How does the college selection process work?
+      - Is the college assigned or do I get to choose under this scheme?
+      - How is my preferred college considered in the scholarship allotment?
+
+  - intent: ask_college_allotment_not_choice
+    examples: |
+      - What happens if I don’t get my choice of college?
+      - What if I am allotted a college I didn’t choose?
+      - Can I change my college if I don’t get my preferred one?
+      - What should I do if I’m not allotted my chosen college?
+      - Is there an option if I don’t get the college I wanted?
+      - What if I’m unhappy with the college I’m allotted?
+      - Can I request a different college if I don’t get my first choice?
+      - How do I proceed if I don’t get the college I selected?
+      - What are my options if my preferred college isn’t allotted?
+      - Can I change colleges if I’m not satisfied with the allotment?
+      - What if my chosen college isn’t available?
+      - What if the college I wanted isn’t allotted to me?
+      - Can I switch colleges if I’m not happy with the one I get?
+      - What happens if I’m allotted a different college than I selected?
+      - During counseling, I have been allotted a college, but it is not of my choice. What do I do?
+      - What should I do if the college allotted to me during counseling is not my choice?
+      - I was allotted a college in counseling, but I don't like it. What are my options?
+      - If I don't like the college I was given, what can I do?
+      - Can I change the college that was allotted to me during counseling?
+      - What should I do if I’m not satisfied with the college I was assigned?
+
+  - intent: ask_freeze_option_next_step
+    examples: |
+      - What is the next step after freezing my college choice?
+      - What should I do after I freeze my option?
+      - How do I proceed once I’ve frozen my choice?
+      - What happens after I freeze my college selection?
+      - What’s the process after using the freeze option?
+      - What are the next steps after freezing my selection?
+      - How do I confirm my admission after freezing my choice?
+      - What comes next after I freeze my option?
+      - What’s the procedure after freezing my choice?
+      - What do I do after freezing my college option?
+      - How do I move forward after freezing my selection?
+      - What’s the next action after freezing my choice?
+      - What steps should I take after freezing my option?
+      - What are the following steps after freezing my choice?
+      - I have selected the freeze option. What is the next step?
+      - What should I do after selecting the freeze option?
+      - I chose the freeze option; what do I need to do next?
+      - What happens after I select the freeze option?
+      - After freezing my choice, what is the next step?
+      - What should be my next action after freezing my college choice?
+
+  - intent: ask_joining_process
+    examples: |
+      - What is the joining process after getting the scholarship?
+      - How do I join the college after being selected?
+      - What steps do I need to take to join the college?
+      - What is the process to join after scholarship approval?
+      - How do I complete the joining process?
+      - What are the steps for joining the institution?
+      - What’s the joining procedure after selection?
+      - How do I proceed with joining the college?
+      - What’s the process to join after getting the allotment?
+      - What should I do to join the college after selection?
+      - How do I complete the joining formalities?
+      - What are the next steps for joining the college?
+      - How do I officially join the college?
+      - What’s the process after getting the scholarship to join the college?
+      - What is the joining process?
+      - How do I join the allotted college?
+      - What are the steps to join the college after allotment?
+      - How do I complete the joining formalities for the college?
+      - What do I need to do to join the college I was allotted?
+      - What is required to start attending the college I was assigned?
+      - What’s the procedure for joining the college after counseling?
+
+  - intent: ask_own_category_joining_process
+    examples: |
+      - How do I join the college if I’m from my own category?
+      - What’s the joining process for students in their own category?
+      - Is there a different process for joining under my own category?
+      - How do I proceed with joining if I’m in my own category?
+      - What are the steps to join the college for my category?
+      - How do students in their own category join the college?
+      - What’s the procedure for joining under my own category?
+      - How do I join if I’m in my own reserved category?
+      - Is the joining process different for own category students?
+      - What should I do to join the college if I belong to my own category?
+      - How do I complete the joining process under my own category?
+      - What’s the joining procedure for students in their own category?
+      - How do I join the institution if I’m in my own category?
+      - What is the process for joining as an own category student?
+      - I have been given admission in the "on my own category" based on document submission in the Entrance Examination Tab. Do I need to complete the joining process?
+      - Do I need to complete the joining process if I am admitted in the "on my own" category?
+      - Am I required to complete the joining formalities if I got admission in the "on my own" category?
+      - If I was admitted under "on my own category," do I still need to complete the joining steps?
+      - Is the joining process mandatory for those admitted in the "on my own" category?
+
+  - intent: ask_scholarship_without_aicte_counseling
+    examples: |
+      - Can I get the scholarship without AICTE counseling?
+      - Is AICTE counseling mandatory for the scholarship?
+      - Can I apply for the scholarship if I skip AICTE counseling?
+      - Is it possible to receive the scholarship without attending AICTE counseling?
+      - What if I don’t go through AICTE counseling, can I still get the scholarship?
+      - Do I need to attend AICTE counseling to be eligible for the scholarship?
+      - Can I bypass AICTE counseling and still get the scholarship?
+      - Is AICTE counseling a requirement for this scholarship?
+      - Will I be eligible for the scholarship without AICTE counseling?
+      - What happens if I don’t attend AICTE counseling?
+      - Can I receive the scholarship if I haven’t participated in AICTE counseling?
+      - Is there a way to get the scholarship without AICTE counseling?
+      - Can I skip AICTE counseling and still receive financial aid?
+      - I have taken admission in a college on my own and not through AICTE Counseling on a merit basis. How can I avail of the scholarship?
+      - How can I get a scholarship if I took admission on my own without AICTE counseling?
+      - What should I do to avail of the scholarship if I didn't go through AICTE Counseling?
+      - Can I apply for a scholarship if I got into college without AICTE Counseling?
+      - What are the steps to get a scholarship if I bypassed AICTE Counseling?
+
+  - intent: ask_upload_joining_report_steps
+    examples: |
+      - How do I upload the joining report?
+      - What are the steps to upload my joining report?
+      - How can I submit the joining report online?
+      - What is the process for uploading the joining report?
+      - How do I properly upload the joining report?
+      - What’s the procedure for submitting my joining report?
+      - How do I upload my joining report to the portal?
+      - What steps do I need to take to upload the joining report?
+      - Can you guide me on how to upload the joining report?
+      - How do I go about uploading the joining report?
+      - What’s the correct way to upload the joining report?
+      - Where do I upload the joining report?
+      - What’s required to upload the joining report?
+      - How do I complete the upload of the joining report?
+      - I have taken admission in a college through the online counseling process. How do I upload the joining report on the portal, and what are the steps for Aadhaar authentication?
+      - How do I upload my joining report on the portal?
+      - What are the steps for uploading the joining report and Aadhaar authentication after online counseling?
+      - How can I submit the joining report on the scholarship portal?
+      - What is the process for Aadhaar authentication and report submission after admission?
+
+  - intent: ask_scholarship_assurance_own_category
+    examples: |
+      - Is the scholarship assured if I belong to my own category?
+      - Will I definitely get the scholarship if I’m in my own category?
+      - How assured is the scholarship for students in their own category?
+      - Is there a guarantee for the scholarship in my own category?
+      - Can I be sure to receive the scholarship if I’m in my own category?
+      - What are the chances of getting the scholarship in my own category?
+      - Is the scholarship guaranteed for students in their own category?
+      - Will I be assured the scholarship if I’m in my own category?
+      - How certain is the scholarship for own category students?
+      - Do students in their own category have assured scholarships?
+      - Is the scholarship certain for my category?
+      - How likely am I to get the scholarship if I’m in my own category?
+      - Will I receive the scholarship if I’m in my category?
+      - How secure is the scholarship for own category applicants?
+      - I have registered to seek a scholarship under the "on my own" category. Can I be assured of getting a scholarship?
+      - Can I be sure of getting a scholarship if I registered under the "on my own" category?
+      - Will I definitely get a scholarship if I applied under the "on my own" category?
+      - Is there a guarantee of scholarship if I applied under the "on my own" category?
+      - Can I count on receiving a scholarship if I opted for the "on my own" category?
+
+  - intent: ask_eligibility_after_discontinuing_course
+    examples: |
+      - Am I eligible for the scholarship if I discontinued my course?
+      - Can I still apply for the scholarship after discontinuing a course?
+      - What happens to my eligibility if I discontinue my course?
+      - Can I reapply for the scholarship after dropping out?
+      - Do I remain eligible if I stop my course midway?
+      - Is eligibility affected by discontinuing a previous course?
+      - What’s my eligibility if I discontinued my studies?
+      - Can I get the scholarship again after discontinuing a course?
+      - Is the scholarship available if I discontinued a previous course?
+      - Will discontinuing a course impact my eligibility?
+      - Can I be eligible for the scholarship if I dropped out earlier?
+      - What if I discontinued a course, can I still apply for the scholarship?
+      - Does stopping a course affect my scholarship eligibility?
+      - Can I qualify for the scholarship after leaving a course incomplete?
+      - I had taken admission based on AICTE counseling and received a scholarship, but due to some circumstances, I could not continue with the course. Am I eligible to apply this year?
+      - Can I apply for the scholarship this year if I discontinued my course last year?
+      - I couldn't continue my course after getting the scholarship. Am I eligible to apply again?
+      - Am I still eligible for the scholarship this year if I dropped out last year?
+      - What is my eligibility for a scholarship after discontinuing a course?
+
+  - intent: ask_scholarship_for_another_ug_degree
+    examples: |
+      - Can I get the scholarship for another undergraduate degree?
+      - Is the scholarship available if I pursue a second UG degree?
+      - Can I apply for the scholarship for a different UG degree?
+      - What if I want to do another UG degree, can I get the scholarship?
+      - Is it possible to receive the scholarship for a second UG course?
+      - Can I get the scholarship again for a new UG degree?
+      - Does the scholarship apply to a second undergraduate program?
+      - Will I be eligible for the scholarship if I pursue another UG degree?
+      - Can I apply for this scholarship for a different UG degree?
+      - Is the scholarship applicable if I enroll in another undergraduate course?
+      - Can I receive the scholarship for a new undergraduate degree?
+      - What’s the process to get the scholarship for another UG degree?
+      - Am I eligible for the scholarship if I start a new UG degree?
+      - Can I get financial aid for another undergraduate degree?
+      - I have completed my UG course availing the scholarship. Can I apply for another UG degree and get a scholarship for that?
+      - Can I get a scholarship for a second UG degree under the scheme?
+      - Am I eligible for another scholarship if I want to pursue a second UG degree?
+      - Is it possible to receive a scholarship for a second UG course?
+      - Can I apply for a new UG degree and get a scholarship after completing one?
+
+  - intent: ask_eligibility_after_previous_admission_in_jk
+    examples: |
+      - Am I still eligible for the scholarship if I had a previous admission in J&K?
+      - Can I apply for the scholarship after having been admitted in J&K?
+      - What’s my eligibility if I had a prior admission in Jammu & Kashmir?
+      - Can I get the scholarship if I was previously admitted in J&K?
+      - How does a previous admission in J&K affect my eligibility?
+      - Can I apply for this scholarship after attending a college in J&K?
+      - Does previous admission in Jammu & Kashmir affect eligibility?
+      - Will my previous J&K admission affect my scholarship application?
+      - Am I eligible for the scholarship if I was previously admitted in J&K?
+      - Can I reapply for the scholarship after previous J&K admission?
+      - How does a previous admission in J&K impact scholarship eligibility?
+      - Is the scholarship available if I had prior admission in Jammu & Kashmir?
+      - Can I still be eligible after having a previous admission in J&K?
+      - Will my eligibility be affected by prior admission in J&K?
+      - I had taken admission in a UG course in Jammu/Kashmir/Ladakh last year. Am I eligible to apply?
+      - Can I apply for the scholarship if I took admission in a UG course in Jammu/Kashmir/Ladakh last year?
+      - Am I eligible for the scholarship if I had a previous UG admission in Jammu/Kashmir/Ladakh?
+      - Does previous UG admission in J&K/Ladakh affect my eligibility for a new scholarship?
+      - Can I still apply for the scholarship if I enrolled in a UG course in J&K/Ladakh last year?

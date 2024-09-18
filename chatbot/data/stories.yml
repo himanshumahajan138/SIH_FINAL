@@ -1,0 +1,227 @@
+version: "3.1"
+
+stories:
+  - story: Welcome Message
+    steps:
+      - intent: get_started
+      - action: utter_welcome_message
+
+  - story: Greet and show menu options
+    steps:
+      - intent: greet
+      - action: utter_greet
+  - story: happy path
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_great
+      - action: utter_happy
+  - story: sad path 1
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+      - intent: affirm
+      - action: utter_happy
+
+  - story: sad path 2
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+      - intent: deny
+      - action: utter_goodbye
+
+  - story: eligibility conditions
+    steps:
+      - intent: ask_eligibility_conditions
+      - action: utter_ask_eligibility_conditions
+
+  - story: registration process
+    steps:
+      - intent: ask_registration_process
+      - action: utter_ask_registration_process
+
+  - story: technical issues
+    steps:
+      - intent: ask_technical_issues
+      - action: utter_ask_technical_issues
+
+  - story: helpline info
+    steps:
+      - intent: ask_helpline_info
+      - action: utter_ask_helpline_info
+
+  - story: required documents
+    steps:
+      - intent: ask_required_documents
+      - action: utter_ask_required_documents
+
+  - story: Upload Issues
+    steps:
+      - intent: ask_upload_issues
+      - action: utter_ask_upload_issues
+
+  - story: Next Steps After Submission
+    steps:
+      - intent: ask_next_steps_after_submission
+      - action: utter_ask_next_steps_after_submission
+
+  - story: Edit Application
+    steps:
+      - intent: ask_edit_application
+      - action: utter_ask_edit_application
+
+  - story: FDV Center Charges
+    steps:
+      - intent: ask_fdv_center_charges
+      - action: utter_ask_fdv_center_charges
+
+  - story: FDV Verification Necessity
+    steps:
+      - intent: ask_fdv_verification_necessity
+      - action: utter_ask_fdv_verification_necessity
+
+  - story: Facilitation Centre
+    steps:
+      - intent: ask_facilitation_centre
+      - action: utter_ask_facilitation_centre
+
+  - story: Document After Verification
+    steps:
+      - intent: ask_document_after_verification
+      - action: utter_ask_document_after_verification
+
+  - story: Submit Original Documents
+    steps:
+      - intent: ask_submit_original_documents
+      - action: utter_ask_submit_original_documents
+
+  - story: Commerce/Arts Eligibility
+    steps:
+      - intent: ask_commerce_arts_eligibility
+      - action: utter_ask_commerce_arts_eligibility
+
+  - story: Diploma Eligibility
+    steps:
+      - intent: ask_diploma_eligibility
+      - action: utter_ask_diploma_eligibility
+
+  - story: Benifits Of Scholarship
+    steps:
+      - intent: ask_scholarship_benefits
+      - action: utter_ask_scholarship_benefits
+
+  - story: Payment Process
+    steps:
+      - intent: ask_payment_process
+      - action: utter_ask_payment_process
+
+  - story: Academic Fee Payment
+    steps:
+      - intent: ask_academic_fee_payment
+      - action: utter_ask_academic_fee_payment
+
+  - story: Maintenance Allowance
+    steps:
+      - intent: ask_maintenance_allowance
+      - action: utter_ask_maintenance_allowance
+
+  - story: No Aadhaar
+    steps:
+      - intent: ask_no_aadhaar
+      - action: utter_ask_no_aadhaar
+
+  - story: Aadhaar Not Seeded
+    steps:
+      - intent: ask_aadhaar_not_seeded
+      - action: utter_ask_aadhaar_not_seeded
+
+  - story: Maintenance Allowance Disbursed
+    steps:
+      - intent: ask_maintenance_allowance_disbursed
+      - action: utter_ask_maintenance_allowance_disbursed
+
+  - story: Other Scholarships
+    steps:
+      - intent: ask_other_scholarships
+      - action: utter_ask_other_scholarships
+
+  - story: Online Counseling
+    steps:
+      - intent: ask_online_counseling
+      - action: utter_ask_online_counseling
+
+  - story: IIT/NIT Scholarship Eligibility
+    steps:
+      - intent: ask_iit_nit_scholarship
+      - action: utter_ask_iit_nit_scholarship
+
+  - story: MBBS/BDS Scholarship Eligibility
+    steps:
+      - intent: ask_mbbs_bds_scholarship
+      - action: utter_ask_mbbs_bds_scholarship
+
+  - story: Management Quota Scholarship Eligibility
+    steps:
+      - intent: ask_management_quota_scholarship
+      - action: utter_ask_management_quota_scholarship
+
+  - story: College Choice
+    steps:
+      - intent: ask_choice_of_college
+      - action: utter_ask_choice_of_college
+
+  - story: College Allotment Not of Choice
+    steps:
+      - intent: ask_college_allotment_not_choice
+      - action: utter_ask_college_allotment_not_choice
+
+  - story: Freeze Option Next Step
+    steps:
+      - intent: ask_freeze_option_next_step
+      - action: utter_ask_freeze_option_next_step
+
+  - story: Joining Process
+    steps:
+      - intent: ask_joining_process
+      - action: utter_ask_joining_process
+
+  - story: Own Category Joining Process
+    steps:
+      - intent: ask_own_category_joining_process
+      - action: utter_ask_own_category_joining_process
+
+  - story: Scholarship Without AICTE Counseling
+    steps:
+      - intent: ask_scholarship_without_aicte_counseling
+      - action: utter_ask_scholarship_without_aicte_counseling
+
+  - story: Upload Joining Report Steps
+    steps:
+      - intent: ask_upload_joining_report_steps
+      - action: utter_ask_upload_joining_report_steps
+
+  - story: Scholarship Assurance Own Category
+    steps:
+      - intent: ask_scholarship_assurance_own_category
+      - action: utter_ask_scholarship_assurance_own_category
+
+  - story: Eligibility After Discontinuing Course
+    steps:
+      - intent: ask_eligibility_after_discontinuing_course
+      - action: utter_ask_eligibility_after_discontinuing_course
+
+  - story: Scholarship for Another UG Degree
+    steps:
+      - intent: ask_scholarship_for_another_ug_degree
+      - action: utter_ask_scholarship_for_another_ug_degree
+
+  - story: Eligibility After Previous Admission in JK
+    steps:
+      - intent: ask_eligibility_after_previous_admission_in_jk
+      - action: utter_ask_eligibility_after_previous_admission_in_jk
