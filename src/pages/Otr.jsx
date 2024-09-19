@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { useNavigate } from 'react-router-dom';
+import LivePhoto from './LivePhoto'
 
 function App() {
   const [activeStep, setActiveStep] = useState('login'); // Start with login screen
@@ -370,6 +371,7 @@ function App() {
 
           {activeStep === 'ekyc' && (
             <div className="flex flex-col items-center bg-white shadow-lg rounded-lg p-4 w-full max-w-xl shadow-pink-200">
+              <LivePhoto/>
               <h2 className="text-2xl font-semibold mb-4">eKYC</h2>
               <p className="mb-4">Complete your eKYC process.</p>
               <div className="w-full mb-4">
