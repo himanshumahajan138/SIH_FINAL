@@ -1,4 +1,4 @@
-# React + Rasa Chatbot
+# React-powered Rasa Chatbot
 
 This project demonstrates how to create a chatbot using React for the frontend and Rasa for the backend. The backend is implemented in Python 3.8 using `virtualenv` for environment management.
 
